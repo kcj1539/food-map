@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>맛집 지도</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="map.css" />
+  </head>
+
+  <body>
+    <nav>
+      <div class="inner">
+        <div class="nav-container">
+          <h1 class="nav-title"><img src="./기타/spoon.png" width="25px" class="relative">맛집 지도<img src="./기타/fork.png" width="25px" class="relative"></h1>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section id="category">
+        <div class="inner">
+          <div class="category-container">
+            <div class="category-list">
+              <button class="category-item" id="korea">한식</button
+              ><button class="category-item" id="china">중식</button
+              ><button class="category-item" id="japan">일식</button
+              ><button class="category-item" id="america">양식</button
+              ><button class="category-item" id="wheat">분식</button
+              ><button class="category-item" id="meat">구이</button
+              ><button class="category-item" id="sushi">회/초밥</button
+              ><button class="category-item" id="cafe">카페</button>
+            </div>
+          </div>
+        </div>
+      </section>
+        <div id="map" class="inner"></div>
+    </main>
+
+
+  <!-- 카카오 API를 불러오기 -->
+  <script type="text/javascript" 
+  src="//dapi.kakao.com/v2/maps/sdk.js?appkey=bd07e00585af544b2504a80b677f9dc0&libraries=services"></script>
+  <script src="script.js"></script>
+  
+  </body>
+</html>
